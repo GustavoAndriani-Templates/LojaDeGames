@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Loja de Consoles</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar com Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sua<span>Loja</span></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="assistenciaDropdown" role="button" data-bs-toggle="dropdown">
+                            Assistência Técnica
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="assistenciaDropdown">
+                            <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="#">Xbox</a></li>
+                            <li><a class="dropdown-item" href="#">Nintendo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Todos os Consoles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="consolesDropdown" role="button" data-bs-toggle="dropdown">
+                            Consoles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="consolesDropdown">
+                            <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="#">Xbox</a></li>
+                            <li><a class="dropdown-item" href="#">Nintendo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Todos os Consoles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown">
+                            Jogos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="gamesDropdown">
+                            <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="#">Xbox</a></li>
+                            <li><a class="dropdown-item" href="#">Nintendo</a></li>
+                            <li><a class="dropdown-item" href="#">PC</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Todos os Jogos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acessórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex search-form">
+                    <input class="form-control search-input" type="search" placeholder="Buscar produtos...">
+                    <button class="btn search-btn" type="submit">
+                        <i class="bi bi-search text-white"></i>
+                    </button>
+                </form>
+                
+                <div class="header-actions">
+                    <a href="#" class="action-icon" title="Minha Conta">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <a href="#" class="action-icon" title="Carrinho">
+                        <i class="bi bi-cart3"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Os Melhores Consoles do Mercado</h1>
+            <p>Encontre os consoles mais populares com os melhores preços e condições de pagamento</p>
+            <a href="#" class="cta-button">Ver Ofertas</a>
+        </div>
+    </section>
+    
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorias</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <i class="bi bi-playstation"></i>
+                        </div>
+                        <div class="category-name">PlayStation</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <i class="bi bi-xbox"></i>
+                        </div>
+                        <div class="category-name">Xbox</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <i class="bi bi-nintendo-switch"></i>
+                        </div>
+                        <div class="category-name">Nintendo</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <i class="bi bi-pc-display"></i>
+                        </div>
+                        <div class="category-name">PC Gaming</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+        <div class="containerCustom">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">PS5</div>
+                    <div class="product-info">
+                        <div class="product-name">PlayStation 5</div>
+                        <div class="product-price">R$ 4.499,00</div>
+                        <div class="product-rating">★★★★★</div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Xbox Series X</div>
+                    <div class="product-info">
+                        <div class="product-name">Xbox Series X</div>
+                        <div class="product-price">R$ 4.299,00</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Nintendo Switch</div>
+                    <div class="product-info">
+                        <div class="product-name">Nintendo Switch OLED</div>
+                        <div class="product-price">R$ 2.799,00</div>
+                        <div class="product-rating">★★★★☆</div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Steam Deck</div>
+                    <div class="product-info">
+                        <div class="product-name">Steam Deck 512GB</div>
+                        <div class="product-price">R$ 3.999,00</div>
+                        <div class="product-rating">★★★★★</div>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="containerCustom">
+            <h2 class="section-title">Por que comprar conosco?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Entrega Rápida</h3>
+                    <p>Receba seu produto em até 24h nas principais capitais</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Compra Segura</h3>
+                    <p>Seus dados protegidos com criptografia de ponta</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3 class="feature-title">Parcele em até 12x</h3>
+                    <p>Opções de pagamento flexíveis para todos os bolsos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="containerCustom">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GameStore</h3>
+                    <p>A melhor loja de consoles e jogos do Brasil. Oferecemos os melhores produtos com preços competitivos.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">PlayStation</a></li>
+                        <li><a href="#">Xbox</a></li>
+                        <li><a href="#">Nintendo</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li>📞 (11) 9999-9999</li>
+                        <li>✉️ contato@gamestore.com</li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📹</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 GameStore. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Simulação de funcionalidades básicas
+        document.addEventListener('DOMContentLoaded', function() {
+            // Adicionar ao carrinho
+            const categoryCards = document.querySelectorAll('.category-card');
+            
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const categoryName = this.querySelector('.category-name').textContent;
+                    alert(`Navegando para categoria: ${categoryName}`);
+                });
+            });
+            
+            // Busca
+            const searchForm = document.querySelector('.search-form');
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const searchInput = this.querySelector('.search-input');
+                if (searchInput.value.trim() !== '') {
+                    alert(`Buscando por: ${searchInput.value}`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
